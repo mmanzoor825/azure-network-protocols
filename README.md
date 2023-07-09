@@ -3,7 +3,7 @@
 </p>
 
 <h1>Observing Network Protocols</h1>
-Will use Wireshark to inspect network protocols between a linux and windows machine. This will be done using virtual machine in Microsoft Azure <br />
+I will use Wireshark to inspect network protocols between a linux (Ubuntu) and windows machine. This will be done using virtual machines in Microsoft Azure. I will use tools like ping, nslookup, ssh in Powershell. The network protocols that will be inspected are DNS, ICMP, DHCP, and SSH. <br />
 
 <h2>Creating Virtual Machines in Azure and Observe ICMP Traffic</h2>
 
@@ -21,19 +21,19 @@ Download Wireshark in the Windows VM.</p>
 <p>
 <img width="949" alt="image" src="https://github.com/mmanzoor825/azure-network-protocols/assets/138532574/626baf03-22c7-4648-b82f-21ed9c015247">
 <P>
-Open Wireshark and filter for ICMP traffic. Ping the private IP address of the Linux VM. Ping Google.com. Observe the data that in Wireshark.</p>
+Open Wireshark and filter for ICMP traffic. Ping the private IP address of the Linux VM. Ping Google.com. If the Windows machine is able to reach and communicate with the Linux machine, it will reply back as shown above. Observe the ICMP traffic in Wireshark.</p>
 
 <h2>Observing SSH Traffic</h2>
 <p>
 <img width="943" alt="image" src="https://github.com/mmanzoor825/azure-network-protocols/assets/138532574/1d2097ef-284f-4b83-b21f-d005ac91d98a">
 <P>
-Filter Wireshark for SSH traffic. Connect to the Linux VM using SSH from the Windows VM. Observe SSH traffic in Wireshark. 
+Filter Wireshark for SSH traffic. Connect to the Linux VM using SSH from the Windows VM. Observe SSH traffic in Wireshark which starts when the SSH connection is made. 
 
  <h2>Observing DNS Traffic</h2>
 <p>
 <img width="943" alt="image" src="https://github.com/mmanzoor825/azure-network-protocols/assets/138532574/5c3b94f9-b71a-4886-b586-00bd38d94bdd">
 <P>
-Filter Wireshark for DNS traffic. Use nslookup in powershell. Observe DNS traffic in Wireshark. 
+Filter Wireshark for DNS traffic. Use nslookup in powershell to find the IP address of Google.com. DNS traffic is generated in Wireshark. 
    
 <h2>Observing DHCP Traffic</h2>
 <p>
